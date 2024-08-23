@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
 	    steps {
-		git branch: 'main', url: 'https://github.com/DevandMlOps/proye_calc_simple.git'
+		git branch: 'main', url: 'https://github.com/DevandMlOps/proye-calc-simple.git'
 	    }
 	}
 
