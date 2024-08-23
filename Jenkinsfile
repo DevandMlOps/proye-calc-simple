@@ -4,7 +4,7 @@ pipeline {
     stages {
         stage('Checkout') {
 	    steps {
-		git branch: 'main', url: 'https://github.com/DevandMlOps/proyecto_calc_simple.git'
+		git branch: 'main', url: 'https://github.com/DevandMlOps/proye_calc_simple.git'
 	    }
 	}
 
@@ -25,8 +25,8 @@ pipeline {
 		withSonarQubeEnv('sonarqube') {
 		    sh '''
 		        mvn sonar:sonar \
-		          -Dsonar.projectKey=proyecto_calc_simple \
-		          -Dsonar.projectName='proyecto_calc_simple' \
+		          -Dsonar.projectKey=proye_calc_simple \
+		          -Dsonar.projectName='proye_calc_simple' \
 		          -Dsonar.projectVersion=1.0 \
 		          -Dsonar.sources=src/main/java/ \
 		          -Dsonar.java.binaries=target/classes \
